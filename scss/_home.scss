@@ -1,0 +1,69 @@
+.s-hero {
+    .container {
+        @include flex(row, center, space-between);
+        height: 60.8rem;
+        max-width: 83.5%;
+        margin-top: 4.3rem;
+        background-color: rgba(212, 224, 255, 0.35);
+        border-radius: 1rem;
+        .text {
+                padding-left: 10.2rem;
+
+                h1 {
+                    max-width: 58rem;
+                    font-weight: 700;
+                    font-size: 7.2rem;
+                    line-height: 114.5%;
+                    color: $principal-home;
+                    span {
+                        color: $principal-colored;
+                    }
+                }
+                p {
+                    font-size: 1.8rem;
+                    padding-top: 3.2rem;
+                    line-height: 150%; 
+                    max-width: 50rem;
+                    color: $secundary-home;
+                    span {
+                        font-weight: 700;
+                    }
+                }
+                form {
+                    margin-top: 4.3rem;
+                    input {
+                        width: 28.5rem;
+                        padding: 1.2rem 1.6rem;
+                        border-radius: 0.5rem;
+                        font-size: 1.6rem;
+                        line-height: 114.5%;
+                    }
+                    button {
+                        margin-left: 2rem;
+                        padding: 0rem 4.2rem;
+                        height: 4.2rem;
+                        background: $principal-colored;
+                        box-shadow: 0rem 0.4rem 0.8rem #B0C6FF;
+                        color: $white;
+                        font-size: 1.6rem;
+                        line-height: 114.5%;
+                        @include style-btn(4.2rem, $principal-colored, $white);
+                    }
+                    
+                        
+                    
+                }
+        }
+        .image {
+            position: relative;
+            .second-image {
+                position: absolute;
+                top:-10.32rem; 
+                left:0.6rem;
+            }
+        }
+    }
+}
+footer {
+    height: 7.2rem;
+}
